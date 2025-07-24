@@ -31,19 +31,19 @@ const Contact = () => {
     {
       icon: FaEnvelope,
       label: "Email",
-      value: "alex@example.com",
-      href: "mailto:alex@example.com"
+      value: "deenadayalan1810@gmail.com",
+      href: "mailto:deenadayalan1810@gmail.com"
     },
     {
       icon: FaPhone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 6385591810",
+      href: "tel:+6385591810"
     },
     {
       icon: FaMapMarkerAlt,
-      label: "Location",
-      value: "San Francisco, CA",
+      label: "Villupuram",
+      value: "Tamilnadu",
       href: "#"
     }
   ];
@@ -52,19 +52,19 @@ const Contact = () => {
     {
       icon: FaGithub,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/deenadayalan1810",
       color: "hover:text-gray-400"
     },
     {
       icon: FaLinkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "http://localhost:8080/linkedin.com/in/deena-dayalan-9a5884359",
       color: "hover:text-blue-400"
     },
     {
       icon: FaEnvelope,
       label: "Email",
-      href: "mailto:alex@example.com",
+      href: "mailto:deenadayalan1810@gmail.com",
       color: "hover:text-primary"
     }
   ];

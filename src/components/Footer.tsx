@@ -15,7 +15,7 @@ const Footer = () => {
             className="text-2xl font-bold gradient-text mb-4 cursor-pointer inline-block"
             onClick={scrollToTop}
           >
-            &lt;DevPortfolio/&gt;
+            &lt;Frontend Developer&gt;
           </motion.div>
           
           <p className="text-muted-foreground mb-6 max-w-md mx-auto">
@@ -41,7 +41,7 @@ const Footer = () => {
 
           <div className="border-t border-border pt-8">
             <p className="text-muted-foreground flex items-center justify-center gap-2">
-              © {new Date().getFullYear()} Alex Johnson. Made with 
+              © {new Date().getFullYear()} Deenadayalan. Made with 
               <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ repeat: Infinity, duration: 1.5 }}

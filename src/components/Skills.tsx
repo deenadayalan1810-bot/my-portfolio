@@ -13,7 +13,8 @@ import {
 } from "react-icons/fa";
 import { 
   SiTypescript, 
-  SiTailwindcss, 
+  SiTailwindcss,
+  SiBootstrap, 
   SiNextdotjs, 
   SiMongodb,
   SiFirebase,
@@ -26,17 +27,17 @@ const Skills = () => {
 
   const skills = [
     { name: "React", icon: FaReact, level: 95, color: "text-blue-400" },
-    { name: "TypeScript", icon: SiTypescript, level: 90, color: "text-blue-600" },
+    // { name: "TypeScript", icon: SiTypescript, level: 90, color: "text-blue-600" },
     { name: "JavaScript", icon: FaJs, level: 95, color: "text-yellow-400" },
-    { name: "Next.js", icon: SiNextdotjs, level: 85, color: "text-foreground" },
+    // { name: "Next.js", icon: SiNextdotjs, level: 85, color: "text-foreground" },
     { name: "HTML5", icon: FaHtml5, level: 98, color: "text-orange-500" },
     { name: "CSS3", icon: FaCss3Alt, level: 95, color: "text-blue-500" },
-    { name: "Tailwind CSS", icon: SiTailwindcss, level: 92, color: "text-cyan-400" },
-    { name: "Sass", icon: FaSass, level: 88, color: "text-pink-400" },
+    { name: "Bootstrap", icon: SiBootstrap, level: 92, color: "text-cyan-400" },
+    // { name: "Sass", icon: FaSass, level: 88, color: "text-pink-400" },
     { name: "Node.js", icon: FaNode, level: 80, color: "text-green-500" },
-    { name: "MongoDB", icon: SiMongodb, level: 75, color: "text-green-600" },
-    { name: "Firebase", icon: SiFirebase, level: 85, color: "text-orange-400" },
-    { name: "GraphQL", icon: SiGraphql, level: 70, color: "text-pink-500" },
+    // { name: "MongoDB", icon: SiMongodb, level: 75, color: "text-green-600" },
+    // { name: "Firebase", icon: SiFirebase, level: 85, color: "text-orange-400" },
+    // { name: "GraphQL", icon: SiGraphql, level: 70, color: "text-pink-500" },
     { name: "Git", icon: FaGitAlt, level: 90, color: "text-orange-600" },
     { name: "Figma", icon: FaFigma, level: 85, color: "text-purple-500" },
   ];
@@ -79,7 +80,7 @@ const Skills = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-6"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         >
           {skills.map((skill) => (
             <motion.div

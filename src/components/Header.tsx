@@ -36,7 +36,7 @@ const Header = () => {
             className="text-2xl font-bold gradient-text cursor-pointer"
             onClick={() => scrollToSection("hero")}
           >
-            &lt;DevPortfolio/&gt;
+            Frontend Developer
           </motion.div>
 
           <div className="flex items-center space-x-6">

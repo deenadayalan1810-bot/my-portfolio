@@ -21,6 +21,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          className="mt-[100px] mb-[100px] sm:mt-0 sm:mb-0"
         >
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -30,7 +31,7 @@ const Hero = () => {
           >
             Hi, I'm{" "}
             <span className="gradient-text">
-              Alex Johnson
+              Deenadayalan
             </span>
           </motion.h1>
 
@@ -85,9 +86,9 @@ const Hero = () => {
             className="flex justify-center space-x-6"
           >
             {[
-              { icon: FaGithub, href: "https://github.com", label: "GitHub" },
-              { icon: FaLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { icon: FaEnvelope, href: "mailto:alex@example.com", label: "Email" },
+              { icon: FaGithub, href: "https://github.com/deenadayalan1810", label: "GitHub" },
+              { icon: FaLinkedin, href: "linkedin.com/in/deena-dayalan-9a5884359", label: "LinkedIn" },
+              { icon: FaEnvelope, href: "deenadayalan1810@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}
