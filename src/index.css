@@ -8,6 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Portfolio Light Theme */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4%;
+
+    --primary: 224 76% 48%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 262 83% 58%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 224 76% 48%;
+
+    --radius: 0.75rem;
+
+    /* Portfolio specific colors - Light theme */
+    --hero-gradient: linear-gradient(135deg, hsl(224, 76%, 48%), hsl(262, 83%, 58%));
+    --card-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(210, 40%, 96%));
+    --skill-gradient: linear-gradient(90deg, hsl(224, 76%, 48%), hsl(262, 83%, 58%));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(224, 76%, 48%, 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(0, 0%, 0%, 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
     /* Portfolio Dark Theme */
     --background: 222 84% 5%;
     --foreground: 210 40% 98%;
@@ -37,20 +83,9 @@ All colors MUST be HSL.
     --input: 217 33% 17%;
     --ring: 224 76% 48%;
 
-    --radius: 0.75rem;
-
-    /* Portfolio specific colors */
-    --hero-gradient: linear-gradient(135deg, hsl(224, 76%, 48%), hsl(262, 83%, 58%));
+    /* Portfolio specific colors - Dark theme */
     --card-gradient: linear-gradient(135deg, hsl(224, 71%, 8%), hsl(217, 33%, 17%));
-    --skill-gradient: linear-gradient(90deg, hsl(224, 76%, 48%), hsl(262, 83%, 58%));
-    
-    /* Shadows */
-    --shadow-glow: 0 0 40px hsl(224, 76%, 48%, 0.3);
     --shadow-card: 0 10px 30px -10px hsl(0, 0%, 0%, 0.5);
-    
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
 
@@ -105,8 +140,8 @@ All colors MUST be HSL.
   }
 
   .glass-effect {
-    background: rgba(30, 41, 59, 0.3);
+    background: hsl(var(--background) / 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid hsl(var(--border));
   }
 }

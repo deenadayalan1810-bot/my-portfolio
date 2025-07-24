@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import { Sun, Moon } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,30 +39,46 @@ const Header = () => {
             &lt;DevPortfolio/&gt;
           </motion.div>
 
-          <div className="hidden md:flex space-x-8">
-            {["About", "Skills", "Projects", "Contact"].map((item) => (
-              <motion.button
-                key={item}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-foreground hover:text-primary transition-colors duration-300"
-              >
-                {item}
-              </motion.button>
-            ))}
-          </div>
+          <div className="flex items-center space-x-6">
+            <div className="hidden md:flex space-x-8">
+              {["About", "Skills", "Projects", "Contact"].map((item) => (
+                <motion.button
+                  key={item}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => scrollToSection(item.toLowerCase())}
+                  className="text-foreground hover:text-primary transition-colors duration-300"
+                >
+                  {item}
+                </motion.button>
+              ))}
+            </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+            {/* Theme Toggle */}
             <motion.button
-              whileTap={{ scale: 0.95 }}
-              className="text-foreground"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="p-2 rounded-lg bg-secondary/20 hover:bg-secondary/30 transition-colors duration-300"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+              {theme === "dark" ? (
+                <Sun className="h-5 w-5 text-foreground" />
+              ) : (
+                <Moon className="h-5 w-5 text-foreground" />
+              )}
             </motion.button>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <motion.button
+                whileTap={{ scale: 0.95 }}
+                className="text-foreground"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </motion.button>
+            </div>
           </div>
         </nav>
       </div>
