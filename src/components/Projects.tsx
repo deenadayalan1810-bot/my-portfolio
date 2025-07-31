@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+// import CherriDM from "/project1.png"
 
 const Projects = () => {
   const ref = useRef(null);
@@ -10,61 +11,51 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A modern e-commerce platform built with React, TypeScript, and Stripe integration. Features include user authentication, product catalog, shopping cart, and payment processing.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Stripe", "Firebase"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/example",
+      title: "Cherri DM",
+      description: "Cherri DM is the official website for a digital marketing agency. The site was designed to showcase the company's services, highlight client success stories, and offer visitors a simple way to get in touch. It reflects a clean and modern UI with responsive design, built using front-end technologies and a PHP-powered backend.",
+      image: "/project1.png",
+      technologies: ["Html","Css","Bootstrap","Javascript","Php"],
+      liveLink: "https://www.cherridm.com/",
+      githubLink: "#",
       featured: true
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["Next.js", "MongoDB", "Socket.io", "Framer Motion"],
-      liveLink: "https://example.com",
+      title: "Only Momos",
+      description: "Only Momos is a modern and visually appealing restaurant website designed for a momo-specialty food brand. The website showcases menu items, customer testimonials, and a smooth contact experience for visitors. Built with a focus on performance and design, it offers a seamless user experience across devices.",
+      image: "/project2.png",
+      technologies: ["React","Tailwind","Node.js"],
+      liveLink: "https://onlymomos.vercel.app/",
       githubLink: "https://github.com/example",
       featured: true
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["React", "Weather API", "Chart.js", "CSS3"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/example",
+      title: "Ayurananda Ayurvedic Centre",
+      description: "Ayurananda Clinic is a bilingual (English & German) website developed for an Ayurveda wellness clinic. The site provides information about treatments, therapies, and the clinic's vision. Designed with a clean layout and user-friendly structure, it supports dynamic image content and a contact form powered by PHP.",
+      image: "/project3.png",
+      technologies: ["Html","CSS","Bootstrap","Javascript","Php","Mysql"],
+      liveLink: "https://ayurananda.cherricloud.com/en/",
+      githubLink: "#",
       featured: false
     },
     {
       id: 4,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing projects and skills with smooth animations and modern design.",
+      title: "Business & Service Websites – Static & WordPress Projects",
+      description: "Worked on 10+ websites for various small businesses and service-based industries, using both static (HTML/CSS/JS) and WordPress platforms. These projects include company portfolios, landing pages, and contact-enabled business sites tailored to client needs.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/example",
+      technologies: ["Html","Css","Bootstrap","Javascript","Php","Wordpress"],
+      liveLink: "#",
+      githubLink: "#",
       featured: false
     },
     {
       id: 5,
-      title: "Social Media Dashboard",
-      description: "A comprehensive social media analytics dashboard with data visualization and engagement metrics.",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop",
-      technologies: ["Vue.js", "D3.js", "Node.js", "PostgreSQL"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/example",
-      featured: false
-    },
-    {
-      id: 6,
-      title: "Crypto Tracker",
-      description: "Real-time cryptocurrency tracking application with price alerts, portfolio management, and market analysis.",
-      image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=500&h=300&fit=crop",
-      technologies: ["React", "Redux", "CoinGecko API", "Chart.js"],
-      liveLink: "https://example.com",
+      title: "Portfolio",
+      description: "This Portfolio Website was developed to showcase my frontend development skills, featured projects, and experience in a professional and organized layout. Built using React.js and Tailwind CSS, the site is fully responsive, fast-loading, and user-friendly across all devices.",
+      image: "/project5.png",
+      technologies: ["React","Tailwind Css"],
+      liveLink: "https://deenadayalan-portfolio.web.app/",
       githubLink: "https://github.com/example",
       featured: false
     }
@@ -204,7 +195,7 @@ const Projects = () => {
           className="text-center mt-12"
         >
           <motion.a
-            href="https://github.com"
+            href="https://github.com/deenadayalan1810"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}

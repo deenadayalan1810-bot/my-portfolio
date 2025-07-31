@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa"; 
+
 
 const Contact = () => {
   const ref = useRef(null);
@@ -152,6 +154,17 @@ const Contact = () => {
                 >
                   Send Message
                 </motion.button>
+                <motion.a
+  href="https://wa.me/916385591810?text=Hi%20there%2C%20I%20want%20to%20know%20more!" // Update number & message
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ scale: 1.02 }}
+  whileTap={{ scale: 0.98 }}
+  className="w-full bg-[#25D366] text-white py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-glow flex items-center justify-center gap-2"
+>
+  <FaWhatsapp className="text-xl" />
+  Chat on Whatsapp
+</motion.a>
               </form>
             </div>
           </motion.div>
