@@ -77,7 +77,7 @@ const About = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="public/Deenadayalan_updated_Resume.pdf"
+              href="/Deenadayalan_updated_Resume.pdf"
               download
               className="flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/90"
             >
