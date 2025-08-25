@@ -54,13 +54,13 @@ const Contact = () => {
     {
       icon: FaGithub,
       label: "GitHub",
-      href: "https://github.com/deenadayalan1810",
+      href: "https://github.com/deenadayalan1810-bot",
       color: "hover:text-gray-400"
     },
     {
       icon: FaLinkedin,
       label: "LinkedIn",
-      href: "http://localhost:8080/linkedin.com/in/deena-dayalan-9a5884359",
+      href: "https://www.linkedin.com/in/deena-dayalan-9a5884359/",
       color: "hover:text-blue-400"
     },
     {
